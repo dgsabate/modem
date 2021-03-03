@@ -203,9 +203,9 @@ def write_to_ga_via_mp(df):
   for row_index, bq_results_row in df.iterrows():
     i += 1
     hit_data = {}
-    for (ga_key, value) in GA_MP_STANDARD_HIT_DETAILS.items():
-      if value:
-        hit_data[ga_key] = value
+    # for (ga_key, value) in GA_MP_STANDARD_HIT_DETAILS.items():
+    #   if value:
+    #     hit_data[ga_key] = value
 
     # add additional information from BQ
     for (column_name, column_value) in bq_results_row.iteritems():
